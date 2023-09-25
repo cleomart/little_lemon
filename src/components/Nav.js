@@ -1,4 +1,6 @@
 import logo from "../images/Logo.svg"
+import DoormatNav from "./DoormatNav";
+//import DoormatNav from "./DoormatNav"
 
 function Nav() {
     const navStyle = {
@@ -6,7 +8,6 @@ function Nav() {
         gridTemplateColumns: "1fr 2fr",
         gridTemplateRows: "80px",
         justifyItems: "center",
-        justifyContent: "center",
         alignItems: "center",
         padding: "15px",
         fontSize: "18px",
@@ -19,8 +20,7 @@ function Nav() {
 
     const ulStyle = {
         display: "inline-grid",
-        gridTemplateColumns: "repeat(auto-fill, 10fr)",
-        //gridTemplateRows: "2fr",
+        gridTemplateColumns: "repeat(6, 10fr)",
         justifyItems: "center",
         listStyleType: "none",
         gridColumnGap: "10px",
@@ -30,14 +30,7 @@ function Nav() {
     return (
         <nav style={navStyle} className="navbar">
             <img height="60px" width="180px" src={logo} alt="Little Lemon Logo"></img>
-            <ul style={ulStyle}>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservation">Reservations</a></li>
-                <li><a href="#order-online">Order Online</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
+            <DoormatNav style={ulStyle}></DoormatNav>
         </nav>
     )
 }

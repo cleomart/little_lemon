@@ -1,27 +1,51 @@
 import logo from "../images/Logo.svg"
+import DoormatNav from "./DoormatNav";
+
+
+
 
 function Footer() {
+    const footerStyle = {
+        display: "grid",
+        gridTemplateColumns: "1fr 2fr 2fr 2fr",
+        gridTemplateRows: "80px",
+        justifyItems: "center",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "15px",
+        fontSize: "16px",
+        fontFace: "Karla",
+        fontWeight: "bold",
+        color: "#495E57",
+        textDecoration: "none"
+
+    }
+
+    const doormatNavStyle ={
+        justifyItems: "center",
+        listStyleType: "none",
+        textDecoration: "none"
+    }
+
+    const ulStyle = {
+        listStyleType: "none",
+    }
+
+
     return (
-        <footer>
+        <footer style={footerStyle} className="footer">
             <img src={logo}></img>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about"></a>About</li>
-                <li><a href="#menu"></a>Menu</li>
-                <li><a href="#reservation"></a>Reservation</li>
-                <li><a href="#order-online"></a>Order Online</li>
-                <li><a href="#login"></a>Login</li>
+            <DoormatNav style={doormatNavStyle}></DoormatNav>
+            <ul style={ulStyle}>
+                <p>Contact</p>
+                <li><a href="#home">Address</a></li>
+                <li><a href="#home">Phone Number</a></li>
+                <li><a href="#home">Email</a></li>
             </ul>
-            <ul>
-                Contact
-                <li>Address</li>
-                <li>Phone Number</li>
-                <li>email</li>
-            </ul>
-            <ul>
-                Social Media Links
-                <li>facebook</li>
-                <li>Instagrem</li>
+            <ul style={ulStyle}>
+                <p fontWeight="bolder">Social Media Links</p>
+                <li><a href="#home">Facebook</a></li>
+                <li><a href="#home">Instagram</a></li>
             </ul>
         </footer>
     )
