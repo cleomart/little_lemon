@@ -30,7 +30,10 @@ const specialItems = [
 function Specials() {
     return (
         <section className="specials">
-            <h2>This Week's Specials!</h2>
+            <h3 className="specials-heading">
+                <span>This Week's Specials!</span>
+                <button class="specials-menu-bttn">Menu</button>
+            </h3>
             <section className="specials-cards-container">
                 {specialItems.map( (item) => (
                     <Card

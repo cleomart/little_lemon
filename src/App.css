@@ -76,6 +76,7 @@ main h2 {
   justify-content: center;
 }
 
+/** HERO SECTION */
 
 .hero-section h1 {
   color: #F4CE14;
@@ -95,21 +96,27 @@ main h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   justify-items: center;
   align-items: center;
-  padding: 1em 1em;
+  padding: 0 1em;
   margin: 0 auto;
   color:  #EDEFEE;
-  max-width: 1200px;
+  max-width: 600px;
   font-weight: bold;
-  column-gap: 10em;
+
+}
+
+.hero-desc-section {
+  padding: 1em 1em;
+
 }
 
 .hero-image {
-  height: 300px;
+  height: 270px;
   width: 250px;
   border-radius: 2em;
+  padding: 1em 1em;
 }
 
 
@@ -121,13 +128,15 @@ main h2 {
   font-weight: bold;
   font-size: 1em;
   background-color: #F4CE14;
-  margin-bottom: 1em;
+  border: none;
 }
 
 .hero-description {
   max-width: 200px;
   justify-items: center;
 }
+
+/** END */
 
 
 
@@ -149,20 +158,28 @@ main h2 {
   text-decoration: none;
   margin: 0 auto;
   max-width: 800px;
-  padding: 1em 1em;
+  padding: 1em 2em;
+  
+}
+.footer {
+  column-gap: 0.5em;
+}
+
+.navbar {
   column-gap: 2em;
+
 }
 
 /** SPECIAL CARDS */
 
 .special-card-img {
-  height: 40%;
+  height: 48%;
   width: 100%;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
 
-.special-card-title {
+.special-card-title, .specials-heading {
   display: flex;
   justify-content: space-between;
 }
@@ -173,19 +190,21 @@ main h2 {
   justify-content: center;
   gap: 1em;
   margin: 0 auto;
+  max-width: 800px;
 }
 
 .specials {
-  margin: 0 auto;
+  margin: 2em auto;
   justify-content: center;
-  max-width: 800px;
+  max-width: 700px;
+  padding: 0 1em;
 }
 
 .specials-card {
   background-color: #EDEFEE;
   border-radius: 1em;
   max-width: 200px;
-  height: 330px;
+  height: 380px;
 }
 
 .special-card-title, .specials-card-desc {
@@ -200,5 +219,22 @@ main h2 {
 .special-card-title span:last-child {
   color: #EE9972;
 }
+
+.specials-menu-bttn {
+  height: 1.7em;
+  width: 7em;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 1em;
+  background-color: #F4CE14;
+  margin-bottom: 1em;
+  border: none;
+}
+
+.specials-heading span {
+  font-size: 1.5em;
+  font-family: "Markazi Text";
+}
+
 
 /** END */

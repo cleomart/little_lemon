@@ -10,6 +10,7 @@ function Nav() {
         justifyItems: "center",
         listStyleType: "none",
         gap: "3em",
+        padding: "0 1em"
     }
 
 

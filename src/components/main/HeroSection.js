@@ -6,7 +6,7 @@ function HeroSection() {
     return (
         <section style={{backgroundColor: "#495E57"}}>
             <div className="hero-section">
-                <div>
+                <div className="hero-desc-section">
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
                     <p className="hero-description">{description}</p>
