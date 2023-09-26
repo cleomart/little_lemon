@@ -42,3 +42,112 @@
   text-decoration: none;
   color: #495E57;
 }
+
+main h2 {
+  color: #EDEFEE;
+  font-family: "Markazi Text";
+  font-size: 24pt;
+}
+
+.comments {
+  height: 200px;
+  width: 500px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: Karla;
+}
+.nextButton {
+  background-color: #F4CE14;
+  height: 50px;
+  width: 500px;
+  border-radius: 10px;
+  margin: 20px auto;
+  font-family: Karla;
+  font-size: 20pt;
+  font-weight: bold;
+  color: #495E57;
+
+}
+
+.seating {
+  color: #EDEFEE;
+  font-family: "Markazi Text";
+  font-size: 18pt;
+  justify-content: center;
+}
+
+
+.hero-section h1 {
+  color: #F4CE14;
+  font-family: "Markazi Text";
+  font-size: 2.5rem;
+}
+
+.hero-section h2 {
+  font-family: "Markazi Text";
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: -1em;
+
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em;
+  margin: 0 auto;
+  color:  #EDEFEE;
+  max-width: 1200px;
+  font-weight: bold;
+  column-gap: 10em;
+}
+
+.hero-image {
+  height: 300px;
+  width: 250px;
+  border-radius: 2em;
+}
+
+
+
+.hero-reserve-table-button {
+  height: 2.5em;
+  width: 10em;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: #F4CE14;
+  margin-bottom: 1em;
+}
+
+.hero-description {
+  max-width: 200px;
+  justify-items: center;
+}
+
+
+
+.home-icon {
+  height: auto;
+  width: auto;
+}
+
+.navbar, .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+  justify-items: top;
+  font-size: 1em;
+  font-family: Karla;
+  font-weight: bold;
+  color: #495E57;
+  text-decoration: none;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1em 1em;
+  column-gap: 2em;
+}
