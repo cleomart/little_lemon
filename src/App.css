@@ -96,6 +96,7 @@ main h2 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  justify-items: center;
   align-items: center;
   padding: 1em 1em;
   margin: 0 auto;
@@ -118,7 +119,7 @@ main h2 {
   width: 10em;
   border-radius: 0.5em;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   background-color: #F4CE14;
   margin-bottom: 1em;
 }
@@ -151,3 +152,53 @@ main h2 {
   padding: 1em 1em;
   column-gap: 2em;
 }
+
+/** SPECIAL CARDS */
+
+.special-card-img {
+  height: 40%;
+  width: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.special-card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specials-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin: 0 auto;
+}
+
+.specials {
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.specials-card {
+  background-color: #EDEFEE;
+  border-radius: 1em;
+  max-width: 200px;
+  height: 330px;
+}
+
+.special-card-title, .specials-card-desc {
+  padding: 0 0.7em;
+  font-family: Karla;
+}
+
+.specials-card-desc {
+  color:#495E57;
+
+}
+.special-card-title span:last-child {
+  color: #EE9972;
+}
+
+/** END */
