@@ -5,11 +5,9 @@ import DoormatNav from "./DoormatNav";
 function Nav() {
     const ulStyle = {
         display: "flex",
-       // gridTemplateColumns: "repeat(6, 10fr)",
         flexWrap: "flex",
-        justifyItems: "center",
         listStyleType: "none",
-        gap: "3em",
+        gap: "1em",
         padding: "0 1em"
     }
 
