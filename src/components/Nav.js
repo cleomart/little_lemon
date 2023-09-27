@@ -1,6 +1,6 @@
 import HomeIcon from "./main/HomeIcon";
 import DoormatNav from "./DoormatNav";
-//import DoormatNav from "./DoormatNav"
+
 
 function Nav() {
     const ulStyle = {
@@ -13,11 +13,12 @@ function Nav() {
 
 
     return (
-        <nav className="navbar">
-            <HomeIcon></HomeIcon>
-            <DoormatNav style={ulStyle}></DoormatNav>
-        </nav>
+            <nav className="navbar">
+                <HomeIcon></HomeIcon>
+                <DoormatNav style={ulStyle}></DoormatNav>
+            </nav>
     )
 }
+
 
 export default Nav;

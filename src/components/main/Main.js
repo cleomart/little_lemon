@@ -9,7 +9,8 @@ function Main() {
         <>
         <HeroSection></HeroSection>
         <Specials></Specials>
-        <About></About></>
+        {/* <About></About> */}
+        </>
     )
 }
 
