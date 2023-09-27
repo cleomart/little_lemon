@@ -1,9 +1,9 @@
 import BookingForm from "./BookingForm";
 
-function BookingPage() {
+function BookingPage(props) {
     return (
         <section className="booking-page">
-            <BookingForm></BookingForm>
+            <BookingForm {...props}></BookingForm>
         </section>
     )
 

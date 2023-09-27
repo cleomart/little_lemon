@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 
-function BookingForm() {
+function BookingForm(props) {
     const [numGuests, setNumGuests] = useState(1)
     const [bookDate, setBookDate] = useState("")
     const [booktime, setBookTime] = useState("")
@@ -15,6 +15,7 @@ function BookingForm() {
 
     function timeHandler(e) {
         setBookTime(e.target.value)
+        props.dispatchAvailableTimes()
     }
 
     function occasionHandler(e) {
@@ -26,32 +27,28 @@ function BookingForm() {
     }
 
 
-
     return (
         <form className="booking-form">
             <div>
-                <label for="res-date">Choose date   </label>
+                <label htmlFor="res-date">Choose date:   </label>
                 <input onChange={dateHandler} value={bookDate} type="date" id="res-date"/>
             </div>
 
             <div>
-                <label for="res-time">Choose time   </label>
-                <select onChange={timeHandler} value={booktime} id="res-time ">
-                    <option value="17:00">17:00</option>
-                    <option value="18:00">18:00</option>
-                    <option value="19:00">19:00</option>
-                    <option value="20:00">20:00</option>
-                    <option value="21:00">21:00</option>
-                    <option value="22:00">22:00</option>
+                <label htmlFor="res-time">Choose time:   </label>
+                <select onChange={timeHandler} value={booktime} id="res-time">
+                    {props.availableTimes.map((item) => (
+                        <option key={item} id={item} value={item}>{item}</option>
+                    ))}
                 </select>
             </div>
             <div>
-                <label for="guests">Number of guests   </label>
+                <label htmlFor="guests">Number of guests:   </label>
                 <input onChange={guestHandler} value={numGuests}
                 type="number" placeholder={numGuests} min="1" max="10" id="guests"/>
             </div>
             <div>
-                <label for="occasion">Occasion   </label>
+                <label htmlFor="occasion">Occasion:   </label>
                 <select onChange={occasionHandler} id="occasion" value={occasion}>
                     <option value="birthday">Birthday</option>
                     <option value="anniversary">Anniversary</option>
