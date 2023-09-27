@@ -290,9 +290,28 @@ button {
 
 
 
-/**  SECTION */
+/**  BOOKING FORM SECTION */
 
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 400px;
+  font-family: Karla;
+  font-size: 1.2em;
+  color:#EDEFEE;
+}
 
+.booking-form div {
+  align-items: space-between;
+}
+
+.booking-page {
+  background-color: #495E57;
+  padding: 2em 2em;
+}
 
 
 /** END */
