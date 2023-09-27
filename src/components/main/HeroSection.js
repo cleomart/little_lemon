@@ -1,7 +1,7 @@
 import restauranfood from "./../../images/restauranfood.jpg"
 
 function HeroSection() {
-    const description = "We are family owned Mediterranean restaurant \
+    const description = "We are a Mediterranean restaurant \
     , focused on traditional recipes served with a modern twist!"
     return (
         <section style={{backgroundColor: "#495E57"}}>
