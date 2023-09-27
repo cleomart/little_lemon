@@ -1,4 +1,5 @@
 import Card from "./Card";
+import { useNavigate } from "react-router-dom";
 
 const specialItems = [
     {
@@ -28,11 +29,17 @@ const specialItems = [
 ]
 
 function Specials() {
+    let navigate = useNavigate();
+    const routeChange = () =>{
+        let path = `/menu`;
+        navigate(path);
+    }
+
     return (
         <section className="specials">
             <h3 className="specials-heading">
                 <span>This Week's Specials!</span>
-                <button class="specials-menu-bttn">Menu</button>
+                <button onClick={routeChange} class="specials-menu-bttn">Menu</button>
             </h3>
             <section className="specials-cards-container">
                 {specialItems.map( (item) => (

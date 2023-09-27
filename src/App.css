@@ -278,6 +278,14 @@ main h2 {
   left: 7em;
 }
 
+.nav-item:hover {
+  color:#d5815a
+}
+
+button {
+  cursor: pointer
+}
+
 /** END */
 
 
