@@ -300,9 +300,17 @@ button {
   margin: 0 auto;
   max-width: 400px;
   font-family: Karla;
-  font-size: 1.2em;
   color:#EDEFEE;
 }
+.booking-form label {
+  font-size: 1.1em;
+  color:#EDEFEE;
+}
+
+.booking-form FormErrorMessage {
+  color: red;
+}
+
 
 .booking-form h1 {
   color:#F4CE14;
@@ -349,6 +357,7 @@ button {
   font-size: 1.1em;
   font-weight: bold;
   border: none;
+  color:#495E57;
 }
 
 
