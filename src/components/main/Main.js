@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import Aboutfr from "../about/About";
 import About from "../about/About";
+import Testimonials from "../testimonials/Testimonials";
 
 function Main() {
    
@@ -12,6 +13,7 @@ function Main() {
         <>
         <HeroSection></HeroSection>
         <Specials></Specials>
+        <Testimonials></Testimonials>
         {/* <About></About> */}
         </>
     )

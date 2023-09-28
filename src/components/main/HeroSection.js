@@ -1,4 +1,4 @@
-import restauranfood from "./../../images/restauranfood.jpg"
+import restauranfood from "./../../images/restaurant.jpg"
 import { useNavigate } from "react-router-dom";
 
 function HeroSection() {

@@ -12,7 +12,7 @@ function About() {
                     <h2>Chicago</h2>
                     <p className="hero-description">{description}</p>
                     <p>We have been in business since 2013</p>
-                    <p>Owned by Adrian and Mario</p>
+                    <p>Owned by Leo and Marty</p>
                     <p>Located at 1234 Reed Ave, Chicago IL</p>
                 </div>
                 <div className="about-images-section">
