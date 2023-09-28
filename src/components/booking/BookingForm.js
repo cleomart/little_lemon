@@ -29,6 +29,7 @@ function BookingForm(props) {
 
     return (
         <form className="booking-form">
+            <h1>Reserve a Table</h1>
             <div>
                 <label htmlFor="res-date">Choose date:   </label>
                 <input onChange={dateHandler} value={bookDate} type="date" id="res-date"/>
@@ -55,8 +56,12 @@ function BookingForm(props) {
                     <option value="others">Others</option>
                 </select>
             </div>
+            <div><label htmlFor="first-name">First Name:   </label><input id="first-name" type="text"></input></div>
+            <div><label htmlFor="last-name">Last Name:   </label><input id="last-name" type="text"></input></div>
+            <div><label htmlFor="email">Email:   </label><input id="email" type="email"></input></div>
+            <div><label htmlFor="comments">Comments:   </label><textarea id="comments"></textarea></div>
 
-            <input type="submit" value="Make Your reservation"></input>
+            <button className="booking-form-submit" type="submit" value="Book">Submit</button>
         </form>
     )
 }

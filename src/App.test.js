@@ -45,4 +45,24 @@ describe("Feedback Form", () => {
 
   });
 
+  test("Test Reserve A Table Heading", () => {
+    const time = "1995-08-18"
+    const atimes = ["16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+
+    render(<BookingForm availableTimes={atimes} dispatchAvailableTimes={console.log} />);
+    const headingElement = screen.getByText("Reserve a Table");
+    expect(headingElement).toBeInTheDocument();
+
+  });
+
+  test("Test Book Button", () => {
+    const time = "1995-08-18"
+    const atimes = ["16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+
+    render(<BookingForm availableTimes={atimes} dispatchAvailableTimes={console.log} />);
+    const headingElement = screen.getByText("Book");
+    expect(headingElement).toBeInTheDocument();
+
+  });
+
 });

@@ -7,21 +7,46 @@ import Main from "./components/main/Main"
 import { Link, Route, Routes } from "react-router-dom";
 import About from "./components/about/About";
 import BookingPage from './components/booking/BookingPage';
-import { useReducer } from 'react';
+import { useEffect, useReducer, useState } from 'react';
+import { fetchAPI } from './mockAPI';
 
+// import { fet} from "./"
 
 function App() {
-  const [availableTimes, dispatchAvailableTimes] = useReducer(updateTimes, initializeTimes())
+  const [initialTimes, setInitialTimes] = useState([]);
 
-
-  function updateTimes() {
-    return;
+  function updateTimes(state, times) {
+    return times;
   }
+
+  const date = new Date();
+  let currentDay= String(date.getDate()).padStart(2, "0");
+  let currentMonth = String(date.getMonth()+1).padStart(2,"0");
+  let currentYear = date.getFullYear();
+  let currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
+
+  useEffect(() => {
+    // Define the function that fetches the data
+    const fetchData = async () => {
+      try {
+        // Make the API request and await the Promise
+        const response = await fetchAPI(currentDate);
+        console.log("RESPONSE", response)
+        dispatchAvailableTimes(response);
+        console.log("INITIAL TIMES", initialTimes)
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    // Call the fetchData function
+    fetchData();
+  }, []); // Empty dependency array ensures this effect runs only once when the component mounts
 
   function initializeTimes() {
-    return ["16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
-
+    return ["16:00", "17:00", "18:00", "19:00", "20:00"]
   }
+  const [availableTimes, dispatchAvailableTimes] = useReducer(updateTimes, initializeTimes())
 
   return (
     <>

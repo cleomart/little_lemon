@@ -296,7 +296,7 @@ button {
   display: flex;
   flex-direction: column;
   row-gap: 2em;
-  align-items: center;
+  align-items: left;
   margin: 0 auto;
   max-width: 400px;
   font-family: Karla;
@@ -304,13 +304,51 @@ button {
   color:#EDEFEE;
 }
 
+.booking-form h1 {
+  color:#F4CE14;
+  margin-bottom: -0.1em;
+  margin-top: -0.1em;
+  font-size: 2em;
+  align-self: center;
+}
+
+.booking-form label {
+  font-weight: bold;
+}
+
 .booking-form div {
-  align-items: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: left;
+}
+
+.booking-form input, .booking-form select {
+  border-radius: 0.5em;
+  height: 2em;
+  width: 100%;
+}
+
+.booking-form textarea {
+  border-radius: 0.5em;
+  height: 6em;
+  width: 100%;
 }
 
 .booking-page {
   background-color: #495E57;
   padding: 2em 2em;
+}
+
+
+.booking-form-submit {
+  height: 2em;
+  border-radius: 0.7em;
+  background-color: #F4CE14;
+  font-family: Karla;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
 }
 
 
