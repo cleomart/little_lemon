@@ -4,11 +4,14 @@ import Head from './components/Head';
 import Header from "./components/Header"
 import Nav from "./components/Nav"
 import Main from "./components/main/Main"
-import { Link, Route, Routes } from "react-router-dom";
 import About from "./components/about/About";
 import BookingPage from './components/booking/BookingPage';
+import ConfirmedBooking from './components/booking/ConfirmedBooking';
+
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { useEffect, useReducer, useState } from 'react';
-import { fetchAPI } from './mockAPI';
+import { fetchAPI, submitAPI } from './mockAPI';
+
 
 // import { fet} from "./"
 
@@ -48,6 +51,15 @@ function App() {
   }
   const [availableTimes, dispatchAvailableTimes] = useReducer(updateTimes, initializeTimes())
 
+
+  let navigate = useNavigate();
+  function onSubmitBookingForm(data) {
+      if (submitAPI(data)) {
+        let path = "/confirmed-booking";
+        navigate(path);
+      }
+  }
+
   return (
     <>
       <Head></Head>
@@ -57,7 +69,14 @@ function App() {
           <Route path="/" element={<Main/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/menu" element={<About/>}></Route>
-          <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatchAvailableTimes={dispatchAvailableTimes}/>}></Route>
+          <Route path="/booking" 
+            element={<BookingPage availableTimes={availableTimes} 
+            dispatchAvailableTimes={dispatchAvailableTimes}
+            onSubmitBookingForm={onSubmitBookingForm}
+            />}
+            >
+          </Route>
+          <Route path="/confirmed-booking" element={<ConfirmedBooking/>}></Route>
       </Routes>
       <Footer></Footer>
     </>
