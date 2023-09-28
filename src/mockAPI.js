@@ -33,7 +33,7 @@ const availableTimesByDate = {
                 resolve(availableTimesByDate[date])
             }
             else{
-                reject(new Error('No available times for the selected date.'));
+              resolve(['15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00'])
             }
         } , 10)
     })

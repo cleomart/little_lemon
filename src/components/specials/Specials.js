@@ -39,7 +39,7 @@ function Specials() {
         <section className="specials">
             <h3 className="specials-heading">
                 <span>This Week's Specials!</span>
-                <button onClick={routeChange} class="specials-menu-bttn">Menu</button>
+                <button aria-label="On Click" onClick={routeChange} class="specials-menu-bttn">Menu</button>
             </h3>
             <section className="specials-cards-container">
                 {specialItems.map( (item) => (

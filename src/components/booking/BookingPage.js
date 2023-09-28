@@ -1,10 +1,12 @@
 import BookingForm from "./BookingForm";
-
+import { ChakraProvider } from '@chakra-ui/react'
 function BookingPage(props) {
     return (
-        <section className="booking-page">
-            <BookingForm {...props}></BookingForm>
-        </section>
+        <ChakraProvider>
+            <section className="booking-page">
+                <BookingForm {...props}></BookingForm>
+            </section>
+        </ChakraProvider>
     )
 
 }

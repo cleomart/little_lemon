@@ -1,16 +1,17 @@
 import React, {useState} from "react"
 import { useFormik } from "formik";
 import {
-    Box,
-    Button,
     FormControl,
     FormErrorMessage,
     FormLabel,
-    Heading,
     Input,
     Select,
     Textarea,
-    VStack,
+    NumberInput,
+    NumberInputField,
+    NumberInputStepper,
+    NumberIncrementStepper,
+    NumberDecrementStepper,
   } from "@chakra-ui/react";
   import * as Yup from 'yup';
 
@@ -40,8 +41,6 @@ function BookingForm(props) {
           lastName: Yup.string().required('Required'),
           email: Yup.string().email('Invalid email').required('Required'),
           comment: Yup.string()
-          .min(25, 'Must be at least 25 characters!')
-          .required('Required'),
         })
       });
 
@@ -65,7 +64,13 @@ function BookingForm(props) {
             </FormControl>
             <FormControl isInvalid={formik.touched.guest && formik.errors.guest}>
                 <FormLabel htmlFor="guests">Number of guests:   </FormLabel>
-                <Input {...formik.getFieldProps('guest')} id="guests"/>
+                <NumberInput defaultValue="1" min="1" max="15" id="guests">
+                    <NumberInputField {...formik.getFieldProps("guest")}  />
+                    <NumberInputStepper>
+                        <NumberIncrementStepper color="white" />
+                        <NumberDecrementStepper color="white"/>
+                    </NumberInputStepper>
+                </NumberInput>
                 <FormErrorMessage>{formik.errors.guest}</FormErrorMessage>
             </FormControl>
             <FormControl isInvalid={formik.touched.occasion && formik.errors.occasion}>
@@ -97,7 +102,7 @@ function BookingForm(props) {
                 <Textarea {...formik.getFieldProps('comment')}  id="comments"></Textarea>
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
             </FormControl>
-            <button className="booking-form-submit" type="submit" value="Book">Book</button>
+            <button aria-label="submit" className="booking-form-submit" type="submit" value="Book">Book</button>
         </form>
     )
 }

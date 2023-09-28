@@ -11,7 +11,6 @@ import ConfirmedBooking from './components/booking/ConfirmedBooking';
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { useEffect, useReducer, useState } from 'react';
 import { fetchAPI, submitAPI } from './mockAPI';
-import { ChakraProvider } from '@chakra-ui/react'
 
 
 // import { fet} from "./"
@@ -57,12 +56,12 @@ function App() {
   function onSubmitBookingForm(data) {
       if (submitAPI(data)) {
         let path = "/confirmed-booking";
-        navigate(path);
+        navigate(path, {state: data});
       }
   }
 
   return (
-    <ChakraProvider>
+    <>
       <Head></Head>
       <Header></Header>
       <Nav></Nav>
@@ -80,7 +79,7 @@ function App() {
           <Route path="/confirmed-booking" element={<ConfirmedBooking/>}></Route>
       </Routes>
       <Footer></Footer>
-    </ChakraProvider>
+    </>
   );
 }
 

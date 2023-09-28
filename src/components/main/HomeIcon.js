@@ -1,7 +1,10 @@
 import logo from "../../images/Logo.svg"
+import { Link } from "react-router-dom";
 function HomeIcon() {
     return (
-        <img className="home-icon" src={logo} alt="Little Lemon Logo"></img>
+        <Link to="/">
+            <img className="home-icon" src={logo} alt="Little Lemon Logo"></img>
+        </Link>
     )
 }
 

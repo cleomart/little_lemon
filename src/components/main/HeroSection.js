@@ -18,7 +18,7 @@ function HeroSection() {
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
                     <p className="hero-description">{description}</p>
-                    <button onClick={routeChange} className="hero-reserve-table-button">
+                    <button aria-label="On Click" onClick={routeChange} className="hero-reserve-table-button">
                         Reserve a Table
                     </button>
                 </div>
