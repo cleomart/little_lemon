@@ -3,22 +3,22 @@ import { useNavigate } from "react-router-dom";
 
 const specialItems = [
     {
-        name: "Leo",
-        review: "The food was amazing. Highly recommend!",
-        starRating: 5,
-        getImageSrc: () => require("../../images/leo.JPG"),
+        name: "Jake",
+        review: "The grilled fish and lemon dessert tasted great. Highly recommend!",
+        starRating: 4,
+        getImageSrc: () => require("../../images/chance.jpeg"),
     },
     {
-        name: "Leo",
-        review: "The food was amazing. Highly recommend!",
+        name: "Raymond",
+        review: "It was very easy to make a reservation. The food and the ambiance were incredible. Will definitely go back again.",
         starRating: 5,
-        getImageSrc: () => require("../../images/leo.JPG"),
+        getImageSrc: () => require("../../images/jake.jpeg"),
     },
     {
-        name: "Leo",
-        review: "The food was amazing. Highly recommend!",
-        starRating: 5,
-        getImageSrc: () => require("../../images/leo.JPG"),
+        name: "Rosa",
+        review: "Little Lemon is my go to restaurant with my family during important occassions although it can get pretty busy",
+        starRating: 4,
+        getImageSrc: () => require("../../images/kathryn.jpeg"),
     }
 ]
 

@@ -7,6 +7,7 @@ import Main from "./components/main/Main"
 import About from "./components/about/About";
 import BookingPage from './components/booking/BookingPage';
 import ConfirmedBooking from './components/booking/ConfirmedBooking';
+import MenuPage from "./components/menu/MenuPage";
 
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { useEffect, useReducer, useState } from 'react';
@@ -68,7 +69,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Main/>}></Route>
           <Route path="/about" element={<About/>}></Route>
-          <Route path="/menu" element={<About/>}></Route>
+          <Route path="/menu" element={<MenuPage/>}></Route>
           <Route path="/booking" 
             element={<BookingPage availableTimes={availableTimes} 
             dispatchAvailableTimes={dispatchAvailableTimes}
