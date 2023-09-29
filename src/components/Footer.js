@@ -11,26 +11,23 @@ function Footer() {
         paddingTop: "1em"
     }
 
-    const ulStyle = {
-        listStyleType: "none",
-    }
 
 
     return (
         <footer className="footer">
             <HomeIcon/>
             <DoormatNav style={doormatNavStyle}></DoormatNav>
-            <ul style={ulStyle}>
-                <p>Contact</p>
-                <li>1234 Reed Ave Chicago, IL</li>
-                <li>(408) 858 - 1234</li>
-                <li><a href="mailto: leomartcrisostomo@gmail.com">leomartcrisostomo@gmail.com</a></li>
-            </ul>
-            <ul style={ulStyle}>
-                <p>Social Media Links</p>
-                <li><a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x"></FontAwesomeIcon></a></li>
-                <li><a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x"></FontAwesomeIcon></a></li>
-            </ul>
+            <div>
+                <h4>Contact</h4>
+                <p>1234 Reed Ave Chicago, IL</p>
+                <p>(408) 858 - 1234</p>
+                <p><a href="mailto: leomartcrisostomo@gmail.com">leomartcrisostomo@gmail.com</a></p>
+            </div>
+            <div >
+                <h4>Social Media Links</h4>
+               <p><a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x"></FontAwesomeIcon></a></p>
+               <p> <a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x"></FontAwesomeIcon></a></p>
+            </div>
         </footer>
     )
 }
