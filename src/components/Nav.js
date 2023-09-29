@@ -7,7 +7,7 @@ function Nav() {
         display: "flex",
         flexWrap: "flex",
         listStyleType: "none",
-        gap: "1em",
+        gap: "1.2em",
         padding: "0 1em"
     }
 

@@ -12,7 +12,7 @@ function ConfirmedBooking() {
                 <p>Your booking has been confirmed. We cannot wait to welcome you!</p>
                 <p><b>Date: </b> {state.date}</p>
                 <p><b>Time: </b> {state.time}</p>
-                <p><b>Date: </b> {state.guest}</p>
+                <p><b>Guests: </b> {state.guest}</p>
                 <p><b>Location: </b> 1234 Reed Ave, Chicago IL</p>
             </section>
 
