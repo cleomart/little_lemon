@@ -157,10 +157,16 @@ main h2 {
   text-decoration: none;
   margin: 0 auto;
   max-width: 800px;
-  padding: 1em 2em;
+  padding: 1em 0.5em;
 }
-.footer {
-  column-gap: 0.5em;
+
+
+footer a:hover {
+  color:#d5815a;
+}
+
+footer li {
+  padding-bottom: 0.2em;
 }
 
 .navbar {
@@ -175,10 +181,6 @@ main h2 {
   width: 100%;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-}
-
-.specials-heading {
-  padding: 0 0.2em;
 }
 
 .special-card-title, .specials-heading, .testimonials-heading {
@@ -234,9 +236,15 @@ main h2 {
 }
 
 .specials-heading span, .testimonials-heading {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: "Markazi Text";
 }
+
+.specials-heading, .testimonials-heading {
+  padding: 0 0.2em;
+}
+
+
 
 
 /** END */
@@ -441,7 +449,7 @@ button {
 
 .testimonials-container {
   background-color: #EE9972;
-  padding: 1em 1em;
+  padding: 0.3em 1em;
 }
 
 
@@ -464,6 +472,8 @@ button {
 .testimonials-heading {
   color:#495E57;
 }
+
+
 
 
 /** END */

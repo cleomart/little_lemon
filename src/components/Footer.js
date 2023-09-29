@@ -1,7 +1,7 @@
 import HomeIcon from "./main/HomeIcon";
 import DoormatNav from "./DoormatNav";
-
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 
 function Footer() {
@@ -22,14 +22,14 @@ function Footer() {
             <DoormatNav style={doormatNavStyle}></DoormatNav>
             <ul style={ulStyle}>
                 <p>Contact</p>
-                <li><a href="#home">Address</a></li>
-                <li><a href="#home">Phone Number</a></li>
-                <li><a href="#home">Email</a></li>
+                <li>1234 Reed Ave Chicago, IL</li>
+                <li>(408) 858 - 1234</li>
+                <li><a href="mailto: leomartcrisostomo@gmail.com">leomartcrisostomo@gmail.com</a></li>
             </ul>
             <ul style={ulStyle}>
                 <p>Social Media Links</p>
-                <li><a href="#home">Facebook</a></li>
-                <li><a href="#home">Instagram</a></li>
+                <li><a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x"></FontAwesomeIcon></a></li>
+                <li><a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="2x"></FontAwesomeIcon></a></li>
             </ul>
         </footer>
     )
