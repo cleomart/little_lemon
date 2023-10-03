@@ -70,7 +70,7 @@ function App() {
           <Route path="/" element={<Main/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/menu" element={<MenuPage/>}></Route>
-          <Route path="/booking" 
+          <Route path="/booking"
             element={<BookingPage availableTimes={availableTimes} 
             dispatchAvailableTimes={dispatchAvailableTimes}
             onSubmitBookingForm={onSubmitBookingForm}

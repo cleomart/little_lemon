@@ -50,23 +50,11 @@ main h2 {
 }
 
 .comments {
-  height: 200px;
+  min-height: 200px;
   width: 500px;
   border-radius: 10px;
   margin-bottom: 10px;
   font-family: Karla;
-}
-.nextButton {
-  background-color: #F4CE14;
-  height: 50px;
-  width: 500px;
-  border-radius: 10px;
-  margin: 20px auto;
-  font-family: Karla;
-  font-size: 20pt;
-  font-weight: bold;
-  color: #495E57;
-
 }
 
 .seating {
@@ -217,7 +205,7 @@ footer p  {
 .specials, .testimonials {
   margin: 2em auto;
   justify-content: center;
-  max-width: 700px;
+  max-width: 650px;
   padding: 0 1em;
 }
 
@@ -225,7 +213,7 @@ footer p  {
   background-color: #EDEFEE;
   border-radius: 1em;
   max-width: 200px;
-  height: 350px;
+  min-height: 380px;
 }
 
 .special-card-title, .specials-card-desc {
@@ -258,7 +246,7 @@ footer p  {
 }
 
 .specials-heading, .testimonials-heading {
-  padding: 0 0.2em;
+  padding: 0 0.5em;
 }
 
 
@@ -322,7 +310,7 @@ button {
 .booking-form {
   display: flex;
   flex-direction: column;
-  row-gap: 2em;
+  row-gap: 1.5em;
   align-items: left;
   margin: 0 auto;
   max-width: 400px;
@@ -332,27 +320,21 @@ button {
 .booking-form label {
   font-size: 1.1em;
   color:#EDEFEE;
+  font-weight: bold;
 }
-
-
 
 .booking-form h1 {
   color:#F4CE14;
   margin-bottom: -0.1em;
-  margin-top: -0.1em;
   font-size: 2em;
   align-self: center;
-  font-weight: bold;
-}
-
-.booking-form label {
   font-weight: bold;
 }
 
 .booking-form div {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.3em;
   align-items: left;
 }
 
@@ -372,7 +354,6 @@ button {
   background-color: #495E57;
   padding: 2em 2em;
 }
-
 
 .booking-form-submit {
   height: 2em;
@@ -402,7 +383,7 @@ button {
   background-image: url("./images/fish.jpg");
   background-position: center;
   background-size: 100% 40em;
-  height: 180px;
+  min-height: 180px;
   max-width: 600px;
   /** How to center a text inside a container */
   display: flex;
@@ -443,7 +424,7 @@ button {
   background-color: #EDEFEE;
   border-radius: 1em;
   max-width: 180px;
-  height: 280px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
