@@ -272,35 +272,35 @@ footer p  {
 }
 
 .about-images-section {
-  position: relative;
+  display: grid;
+  grid-template-columns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr";
+  grid-template-rows: "1fr 1fr 1fr 1fr 1fr 1fr 1fr";
+  padding: 1em 0;
 
-  justify-items: center;
-  margin-bottom: 2em;
-  height: 200px;
-  background-color: #EE9972;
-  padding-bottom: 4em;
-  padding-right: 1em;
 }
 
 .about-image-2 {
-  width: 60%;
-  height: 200px;
+  grid-row: 1 / 5;
+  grid-column: 1 / 5;
   border: 0.8em solid #FBDABB;
-  padding: 0.2em 0.2em;
+  width: 93%;
+  height: 13em;
   border-radius: 0.5em;
-  margin-bottom: 2em;
 
 }
 
+.about-section {
+  max-width: 800px;
+}
 .about-image-1 {
-  position: absolute;
-  width: 50%;
-  height: 200px;
+  grid-row: 3 / 7;
+  grid-column: 3 / 7;
   border: 0.8em solid #495E57;
-  padding: 0.2em 0.2em;
+  width: 85%;
+  height: 13em;;
+  z-index: 1;
   border-radius: 0.5em;
-  top: 3em;
-  left: 7em;
+
 }
 
 .nav-item:hover, button:hover {

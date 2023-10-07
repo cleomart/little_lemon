@@ -6,7 +6,7 @@ function About() {
     in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials"
     return (
         <section  className="about-section-container">
-            <section className="hero-section">
+            <section className="hero-section about-section">
                 <div className="hero-desc-section">
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
