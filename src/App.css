@@ -129,7 +129,7 @@ main h2 {
 
 .home-icon {
   height: 3em;
-  width: auto;
+  width: 100%;
 }
 
 .navbar, .footer {
@@ -145,6 +145,8 @@ main h2 {
   margin: 0 auto;
   max-width: 1024px;
   padding: 1em 1em;
+  column-gap: 2em;
+
 
   
 }
@@ -152,8 +154,6 @@ main h2 {
 footer {
   padding-top: 1em;
   padding-bottom: 1.5em;
-  padding-right: 1em;
-  padding-left: 1em;
 }
 
 
@@ -170,14 +170,8 @@ footer p  {
   margin-top: 0;
 }
 
-.navbar, footer {
-  column-gap: 2em;
 
-}
 
-footer > div {
-  flex: 1;
-}
 
 /** SPECIAL CARDS */
 
@@ -479,7 +473,8 @@ button {
 /** END */
 
 .home-icon-box {
-  margin: 0 auto;
+  justify-content: center;
   text-align: center;
-  flex: 1;
+  margin: 0 auto;
 }
+

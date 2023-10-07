@@ -8,15 +8,14 @@ function Footer() {
     const doormatNavStyle ={
         listStyleType: "none",
         textDecoration: "none",
-        paddingTop: "1em",
-        flex: 1,
+        paddingTop: "1em"
     }
 
 
 
     return (
         <footer className="footer">
-            <HomeIcon/>
+            <HomeIcon className="footer-home-icon"/>
             <DoormatNav style={doormatNavStyle}></DoormatNav>
             <div>
                 <h4>Contact</h4>
