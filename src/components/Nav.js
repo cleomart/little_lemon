@@ -8,7 +8,8 @@ function Nav() {
         flex: 1,
         listStyleType: "none",
 
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
+        columnGap: "1em"
 
     }
 
