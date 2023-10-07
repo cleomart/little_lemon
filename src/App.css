@@ -132,7 +132,7 @@ main h2 {
   width: 100%;
 }
 
-.navbar, .footer {
+.footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -146,9 +146,22 @@ main h2 {
   max-width: 1024px;
   padding: 1em 1em;
   column-gap: 2em;
+}
 
-
-  
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+  font-family: Karla;
+  font-weight: bold;
+  color: #495E57;
+  text-decoration: none;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 1em 1em;
+  column-gap: 2em;
 }
 
 footer {
