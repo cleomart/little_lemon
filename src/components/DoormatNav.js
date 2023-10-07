@@ -4,7 +4,6 @@ import About from "./about/About";
 
 
 function DoormatNav(props) {
-    console.log(props.style)
     return (
         <div style={props.style}>
                 <p><Link to="/#" className="nav-item">Home</Link></p>

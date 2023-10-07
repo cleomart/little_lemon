@@ -52,7 +52,6 @@ main h2 {
 .comments {
   min-height: 200px;
   width: 500px;
-  border-radius: 10px;
   margin-bottom: 10px;
   font-family: Karla;
 }
@@ -84,28 +83,26 @@ main h2 {
 .hero-section {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: center;
+  justify-content: space-between;
   padding: 0 1em;
   margin: 0 auto;
   color:  #EDEFEE;
-  max-width: 700px;
+  max-width: 1024px;
   font-weight: bold;
 
 }
 
 .hero-desc-section {
-  padding: 1em 0.2em;
+  padding: 1em 0;
 
 }
 
 .hero-image {
   height: 270px;
-  width: 280px;
-  border-radius: 2em;
+  width: 100%;
+  border-radius: 1.5em;
   padding: 1em 0.2em;
+  flex: 1;
 }
 
 
@@ -146,12 +143,10 @@ main h2 {
   color: #495E57;
   text-decoration: none;
   margin: 0 auto;
-  max-width: 800px;
-  
-}
+  max-width: 1024px;
+  padding: 1em 1em;
 
-.navbar {
-  padding: 0.8em 0.5em;
+  
 }
 
 footer {
@@ -176,17 +171,21 @@ footer p  {
 }
 
 .navbar, footer {
-  column-gap: 1em;
+  column-gap: 2em;
 
+}
+
+footer > div {
+  flex: 1;
 }
 
 /** SPECIAL CARDS */
 
 .special-card-img {
-  height: 48%;
+  height: 15em;
   width: 100%;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
 }
 
 .special-card-title, .specials-heading, .testimonials-heading {
@@ -196,25 +195,27 @@ footer p  {
 
 .specials-cards-container, .testimonials-cards-container {
   display: flex;
+
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center;
   gap: 1em;
-  margin: 0 auto;
-  max-width: 800px;
+  margin: 0 auto; */
+  gap: 1em;
+  max-width: 1024px;
 }
 
 .specials, .testimonials {
   margin: 2em auto;
   justify-content: center;
-  max-width: 650px;
-  padding: 0 1em;
+  max-width: 1024px;
+
 }
 
 .specials-card {
   background-color: #EDEFEE;
-  border-radius: 1em;
-  max-width: 200px;
-  min-height: 380px;
+  border-radius: 0.5em;
+  flex: 1;
+  min-width: 250px;
 }
 
 .special-card-title, .specials-card-desc {
@@ -247,8 +248,8 @@ footer p  {
   font-family: "Markazi Text";
 }
 
-.specials-heading {
-  padding: 0 0.5em;
+.specials {
+  padding: 0 1em;
 }
 
 
@@ -279,7 +280,7 @@ footer p  {
   height: 200px;
   border: 0.8em solid #FBDABB;
   padding: 0.2em 0.2em;
-  border-radius: 2em;
+  border-radius: 0.5em;
   margin-bottom: 2em;
 
 }
@@ -290,7 +291,7 @@ footer p  {
   height: 200px;
   border: 0.8em solid #495E57;
   padding: 0.2em 0.2em;
-  border-radius: 2em;
+  border-radius: 0.5em;
   top: 3em;
   left: 7em;
 }
@@ -359,7 +360,7 @@ button {
 
 .booking-form-submit {
   height: 2em;
-  border-radius: 0.7em;
+  border-radius: 0.5em;
   background-color: #F4CE14;
   font-family: Karla;
   font-size: 1.1em;
@@ -393,7 +394,7 @@ button {
   justify-content: center;
     /** How to center a text inside a container */
   margin: 0 auto;
-  border-radius: 2em;
+  border-radius: 0.5em;
 }
 
 .confirmed-booking-header > p {
@@ -424,16 +425,14 @@ button {
 
 .testimonials-card {
   background-color: #EDEFEE;
-  border-radius: 1em;
-  max-width: 170px;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-radius: 0.5em;
+  flex: 1;
+  text-align: center;
+
   padding: 0 0.7em;
   font-family: Karla;
   color: #495E57;
-
+  min-width: 200px;
 }
 
 .testimonials-card-review {
@@ -468,7 +467,6 @@ button {
   padding-bottom: 2em;
   padding-right: 1em;
   padding-left: 1em;
-
 }
 
 .testimonials-heading {
@@ -479,3 +477,9 @@ button {
 
 
 /** END */
+
+.home-icon-box {
+  margin: 0 auto;
+  text-align: center;
+  flex: 1;
+}

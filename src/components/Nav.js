@@ -5,10 +5,11 @@ import DoormatNav from "./DoormatNav";
 function Nav() {
     const ulStyle = {
         display: "flex",
-        flexWrap: "flex",
+        flex: 1,
         listStyleType: "none",
         gap: "1.2em",
-        padding: "0 1em"
+        padding: "0 1em",
+        justifyContent: "center"
     }
 
 

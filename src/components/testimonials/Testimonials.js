@@ -16,9 +16,15 @@ const specialItems = [
     },
     {
         name: "Rosa",
+        review: "It was so easy to book a table online amd their customer service was great!",
+        starRating: 5,
+        getImageSrc: () => require("../../images/kathryn.jpeg"),
+    },
+    {
+        name: "Karen",
         review: "Little Lemon is my go to restaurant with my family during important occassions although it can get pretty busy",
         starRating: 4,
-        getImageSrc: () => require("../../images/kathryn.jpeg"),
+        getImageSrc: () => require("../../images/comment5.jpg"),
     }
 ]
 

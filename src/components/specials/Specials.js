@@ -36,7 +36,8 @@ function Specials() {
     }
 
     return (
-        <section className="specials">
+        <section className="specials-container">
+            <section className="specials">
             <h3 className="specials-heading">
                 <span>This Week's Specials!</span>
                 <button aria-label="On Click" onClick={routeChange} class="specials-menu-bttn">Menu</button>
@@ -52,6 +53,10 @@ function Specials() {
                     ></Card>
             ))}</section>
         </section>
+
+
+        </section>
+        
     )
 }
 
