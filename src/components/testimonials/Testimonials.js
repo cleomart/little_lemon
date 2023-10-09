@@ -21,7 +21,7 @@ const specialItems = [
         getImageSrc: () => require("../../images/kathryn.jpeg"),
     },
     {
-        name: "Karen",
+        name: "Gina",
         review: "Little Lemon is my go to restaurant with my family during important occassions although it can get pretty busy",
         starRating: 4,
         getImageSrc: () => require("../../images/comment5.jpg"),

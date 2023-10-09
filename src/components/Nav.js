@@ -7,10 +7,9 @@ function Nav() {
         display: "flex",
         flex: 1,
         listStyleType: "none",
-
         justifyContent: "space-evenly",
-        columnGap: "1em"
-
+        columnGap: "1em",
+        padding: "0.2em 0.2em"
     }
 
 

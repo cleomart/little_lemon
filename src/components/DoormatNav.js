@@ -6,10 +6,10 @@ import About from "./about/About";
 function DoormatNav(props) {
     return (
         <div style={props.style}>
-                <p><Link to="/#" className="nav-item">Home</Link></p>
-                <p><Link className="nav-item" to="/about">About</Link></p>
-                <p><Link className="nav-item" to="/menu">Menu</Link></p>
-                <p><Link className="nav-item" to="/booking">Reservations</Link></p>
+                <Link to="/#" className="nav-item">Home</Link>
+                <Link className="nav-item" to="/about">About</Link>
+                <Link className="nav-item" to="/menu">Menu</Link>
+                <Link className="nav-item" to="/booking">Reservations</Link>
         </div>
     )
 

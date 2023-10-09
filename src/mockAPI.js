@@ -30,10 +30,10 @@ const availableTimesByDate = {
     return new Promise((resolve, reject) => {
         setTimeout(() =>{
             if(availableTimesByDate[date]){
-                resolve(availableTimesByDate[date])
+                resolve(['11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00'])
             }
             else{
-              resolve(['15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00'])
+              resolve(['12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00'])
             }
         } , 10)
     })

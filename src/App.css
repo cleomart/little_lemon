@@ -128,7 +128,7 @@ main h2 {
 
 
 .home-icon {
-  height: 3em;
+  height: 2.5em;
   width: 100%;
 }
 
@@ -144,14 +144,15 @@ main h2 {
   text-decoration: none;
   margin: 0 auto;
   max-width: 1024px;
-  padding: 1em 1em;
+  padding: 0em 1em;
+  padding-bottom: 1em;
   column-gap: 2em;
 }
 
 .navbar {
   display: flex;
   flex-wrap: wrap;
- justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   font-size: 1em;
   font-family: Karla;
@@ -160,8 +161,8 @@ main h2 {
   text-decoration: none;
   margin: 0 auto;
   max-width: 900px;
-  padding: 1em 1em;
   column-gap: 2em;
+  padding: 0.3em 1em;
 }
 
 footer {
