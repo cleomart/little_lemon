@@ -8,7 +8,9 @@ function Footer() {
     const doormatNavStyle ={
         listStyleType: "none",
         textDecoration: "none",
-        paddingTop: "1em"
+        display: "grid",
+        gap: "0.3em",
+        paddingTop: "0.7em"
     }
 
 
